@@ -21,7 +21,7 @@ export function Hero() {
     <section
       ref={ref}
       id="top"
-      className="relative h-[190vh] bg-pearl-grad"
+      className="relative h-[190vh] overflow-hidden bg-pearl-grad"
       aria-label="Velora Vodka hero"
     >
       <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden">

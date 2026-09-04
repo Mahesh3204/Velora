@@ -95,34 +95,36 @@ export function Process() {
 
 export function Purity() {
   return (
-    <section className="relative overflow-hidden bg-ivory-grad px-5 py-24 md:px-12 md:py-36">
-      <div className="mx-auto grid max-w-[1400px] items-center gap-10 lg:grid-cols-2">
+    <section className="relative overflow-hidden bg-ivory-grad px-4 py-14 sm:px-8 sm:py-24 md:px-12 md:py-36">
+      <div className="mx-auto grid max-w-[1400px] items-center gap-8 sm:gap-10 lg:grid-cols-2">
         <Reveal>
           <p className="eyebrow">Purity</p>
-          <h2 className="display mt-5 text-[clamp(2.2rem,5.5vw,5rem)]">
+          <h2 className="display mt-3 sm:mt-5 text-[clamp(1.8rem,5.5vw,5rem)]">
             PURE SPIRIT.
             <br />
             PURE VELORA.
           </h2>
-          <p className="mt-7 max-w-md fluid-sub text-muted-foreground">
+          <p className="mt-4 sm:mt-7 max-w-md fluid-sub text-muted-foreground">
             Premium wheat. Clean water. Nothing that doesn't belong. Velora is refined until the
             spirit reads like glass — soft on the nose, full on the tongue, quiet in the finish.
           </p>
-          <div className="mt-9 flex gap-8">
+          <div className="mt-6 flex flex-wrap items-start justify-between gap-x-4 gap-y-3 sm:mt-9 sm:justify-start sm:gap-8">
             {[
               ["5×", "Filtration"],
               ["3×", "Distillation"],
               ["1", "Velora"],
             ].map(([n, l]) => (
-              <div key={l}>
-                <p className="display text-4xl md:text-5xl">{n}</p>
-                <p className="eyebrow mt-1">{l}</p>
+              <div key={l} className="min-w-0">
+                <p className="display text-3xl sm:text-4xl md:text-5xl">{n}</p>
+                <p className="mt-1 text-[10px] font-semibold tracking-wider text-muted-foreground uppercase sm:text-[11px] sm:tracking-[0.32em]">
+                  {l}
+                </p>
               </div>
             ))}
           </div>
         </Reveal>
 
-        <Reveal delay={0.12} className="grid grid-cols-2 gap-4">
+        <Reveal delay={0.12} className="grid w-full max-w-full grid-cols-2 gap-3 sm:gap-4">
           <img
             src="/assets/purity-wheat.jpg"
             alt="Macro photograph of wheat ears in soft light"
@@ -137,7 +139,7 @@ export function Purity() {
             loading="lazy"
             width={1920}
             height={1088}
-            className="mt-10 h-full w-full rounded-[1.25rem] object-cover shadow-[var(--shadow-glass)]"
+            className="mt-4 sm:mt-10 h-full w-full rounded-[1.25rem] object-cover shadow-[var(--shadow-glass)]"
           />
         </Reveal>
       </div>

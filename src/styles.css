@@ -107,6 +107,8 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   body {
@@ -114,6 +116,7 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     overflow-x: hidden;
+    max-width: 100%;
     font-feature-settings: "ss01", "cv01";
     -webkit-font-smoothing: antialiased;
   }
@@ -163,7 +166,7 @@
 @utility glass-strong {
   background: color-mix(in oklab, var(--pearl) 82%, transparent);
   backdrop-filter: blur(40px) saturate(160%);
-  border: 1px solid color-mix(in oklab, var(--silver) 45%, transparent);
+  border: 1px solid color-mix(in oklab, var(--ink) 25%, transparent);
   box-shadow: var(--shadow-glass);
 }
 

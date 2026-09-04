@@ -27,7 +27,7 @@ export function Collection() {
         </Reveal>
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[1fr_360px]">
-          <div className="no-scrollbar -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 lg:mx-0 lg:px-0">
+          <div className="no-scrollbar -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pt-5 pb-5 lg:mx-0 lg:px-0">
             {products.map((p) => {
               const isActive = p.id === active;
               return (
@@ -37,8 +37,8 @@ export function Collection() {
                   data-cursor="View"
                   aria-pressed={isActive}
                   className={`group relative flex min-w-[228px] flex-1 snap-center flex-col items-center overflow-hidden rounded-[1.5rem] px-5 pt-8 pb-6 transition-all duration-700 ease-out ${isActive
-                      ? "glass-strong -translate-y-2"
-                      : "border border-border/70 bg-card hover:-translate-y-1.5 hover:shadow-[var(--shadow-glass)]"
+                      ? "-translate-y-2 border-2 border-foreground/35 bg-card/95 backdrop-blur-md shadow-xl"
+                      : "border border-border/90 bg-card hover:-translate-y-1.5 hover:border-foreground/30 hover:shadow-[var(--shadow-glass)]"
                     }`}
                 >
                   <span className="eyebrow self-start">{p.tag}</span>
