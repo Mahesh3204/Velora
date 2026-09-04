@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Champagne Gold Liquid Gradient -->
+    <linearGradient id="vibe-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5EA"/>
+      <stop offset="35%" stop-color="#E8D3B4"/>
+      <stop offset="70%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#9A7632"/>
+    </linearGradient>
+
+    <!-- Platinum Silver Reflection Gradient -->
+    <linearGradient id="vibe-silver" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9A7632"/>
+      <stop offset="40%" stop-color="#D9E2EC"/>
+      <stop offset="75%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+
+    <!-- Liquid Light Inner Core Gradient -->
+    <linearGradient id="vibe-core" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#E8D3B4" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Drop Shadow for clarity on white/light/dark browser tabs -->
+    <filter id="tab-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Transparent Background - High-Fashion Modern Monogram "V" -->
+  <g filter="url(#tab-shadow)" transform="translate(0, 16)">
+    <!-- Left Wing of V: Champagne Gold Facet -->
+    <path d="M 112 120 C 132 120, 168 120, 194 120 L 256 384 L 216 384 C 172 278, 134 184, 112 120 Z" fill="url(#vibe-gold)"/>
+
+    <!-- Right Wing of V: Platinum Silver Facet -->
+    <path d="M 400 120 C 380 120, 344 120, 318 120 L 256 384 L 296 384 C 340 278, 378 184, 400 120 Z" fill="url(#vibe-silver)"/>
+
+    <!-- Center Liquid Core Beam -->
+    <path d="M 256 120 L 274 120 L 256 396 L 238 120 Z" fill="url(#vibe-core)"/>
+
+    <!-- Tapered Serifs at top left & right -->
+    <path d="M 112 120 L 153 100 L 194 120 Z" fill="url(#vibe-gold)"/>
+    <path d="M 400 120 L 359 100 L 318 120 Z" fill="url(#vibe-silver)"/>
+
+    <!-- Sparkle Diamond Flare at the vertex -->
+    <g transform="translate(256, 78)">
+      <path d="M 0 -26 L 7 -7 L 26 0 L 7 7 L 0 26 L -7 7 L -26 0 L -7 -7 Z" fill="#FFFFFF"/>
+      <circle r="3.5" fill="#E8D3B4"/>
+    </g>
+  </g>
+</svg>
